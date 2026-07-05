@@ -24,8 +24,21 @@ A modern, fast, and secure To-Do management web application built using **Flask*
 
 ---
 
+## 📸 Screenshots
+
+<p align="center">
+  <b>Login Page</b><br>
+  <img src="assets/login.png" alt="Login Page" width="90%" style="border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin-bottom: 20px;" />
+  <br><br>
+  <b>Tasks Dashboard</b><br>
+  <img src="assets/dashboard.png" alt="Tasks Dashboard" width="90%" style="border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);" />
+</p>
+
+---
+
 ## 📖 Table of Contents
 - [✨ Key Features](#-key-features)
+- [📸 Screenshots](#-screenshots)
 - [🛠️ Tech Stack](#️-tech-stack)
 - [📂 Directory Structure](#-directory-structure)
 - [🔌 API & Routing Documentation](#-api--routing-documentation)
@@ -33,8 +46,6 @@ A modern, fast, and secure To-Do management web application built using **Flask*
 - [🚀 Running the App](#-running-the-app)
 - [💡 Future Enhancements](#-future-enhancements)
 - [📝 License](#-license)
-
----
 
 ## ✨ Key Features
 
