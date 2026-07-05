@@ -1,0 +1,337 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    background: linear-gradient(to right, #0062E6, #33AeFF);
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color .3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #343a40;
+    color: #ccc;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 60px;
+    font-size: 14px;
+    box-shadow: 0 -2px 8px rgba(0,0,0,.1);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ================= FLASH ================= */
+
+.flash {
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: .95rem;
+}
+
+.flash.success {
+    background: #d4edda;
+    color: #155724;
+}
+
+.flash.danger {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.flash.info {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+/* ================= CARDS ================= */
+
+.login-box,
+.task-box {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+.login-box {
+    max-width: 400px;
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ================= FORM ================= */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.form-group input,
+.task-form input[type="text"] {
+    width: 100%;
+    height: 44px;
+    padding: 0 14px;
+    font-size: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 12px;
+    outline: none;
+    transition: border-color .2s, box-shadow .2s;
+}
+
+.form-group input:focus,
+.task-form input[type="text"]:focus {
+    border-color: #1d6fff;
+    box-shadow: 0 0 0 3px rgba(29,111,255,.15);
+}
+
+/* ================= BUTTONS ================= */
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color .2s, transform .2s, box-shadow .2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn-primary {
+    background: #1d6fff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #125ce6;
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #5a636d;
+}
+
+.btn-danger {
+    background: #dc3545;
+    color: white;
+}
+
+.btn-danger:hover {
+    background: #c82333;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+/* ================= TASK FORM ================= */
+
+.task-form {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.task-form input[type="text"] {
+    flex: 1;
+}
+
+.task-form .btn {
+    flex-shrink: 0;
+    min-width: 140px;
+}
+
+.clear-form {
+    margin-bottom: 20px;
+}
+
+/* ================= TABLE ================= */
+
+.task-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.task-table th,
+.task-table td {
+    padding: 14px 16px;
+    text-align: left;
+    vertical-align: middle;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.task-table th {
+    background: #f8f9fb;
+}
+
+/* ================= ACTION BUTTONS ================= */
+
+.task-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.task-actions .btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 36px;
+    padding: 0 14px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    border-radius: 999px;   /* Same pill shape as badge */
+    text-decoration: none;
+}
+
+/* ================= BADGES ================= */
+
+.badge {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;            /* Same width as buttons */
+    height: 36px;            /* Same height as buttons */
+    padding: 0 14px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    border-radius: 999px;    /* Same pill shape */
+    color: white;
+    text-transform: capitalize;
+}
+
+.badge.pending {
+    background: #ffc107;
+}
+
+.badge.working {
+    background: #17a2b8;
+}
+
+.badge.done {
+    background: #28a745;
+}
+
+.task-actions .btn,
+.badge {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* ================= AUTH LINKS ================= */
+
+.auth-link {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 14px;
+    color: #666;
+}
+
+.auth-link a {
+    color: #1d6fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-link a:hover {
+    text-decoration: underline;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 620px) {
+
+    .task-form,
+    .task-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .task-form .btn,
+    .task-actions .btn {
+        width: 100%;
+    }
+
+    .task-actions .btn {
+        min-width: unset;
+    }
+}
