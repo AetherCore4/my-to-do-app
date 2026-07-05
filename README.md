@@ -4,9 +4,6 @@ A modern, fast, and secure To-Do management web application built using **Flask*
 
 ---
 
-<p align="center">
-  <img src="https://via.placeholder.com/800x450.png?text=Premium+To-Do+App+Preview+Placeholder" alt="To-Do Application Mockup" width="100%" style="border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);" />
-</p>
 
 <p align="center">
   <a href="https://opensource.org/licenses/MIT">
