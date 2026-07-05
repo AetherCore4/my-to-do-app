@@ -20,7 +20,7 @@ A modern, fast, and secure To-Do management web application built using **Flask*
 ---
 
 ## 🔗 Live Demo
-🚀 **Check out the live demo here:** **[Live Demo Link Placeholder]** *(e.g., https://your-app.onrender.com)*
+🚀 **Check out the live demo here:** **https://my-to-do-app-uf8x.onrender.com**
 
 ---
 
